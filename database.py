@@ -7,8 +7,8 @@ Example of database name and expression assignment:
 expression = b'[\x01-\xFF]\x00\x01{5}\x05\x01[\x00\x01][\x01-\x07]{2}\x25\x0F'
 db = 'talk.sqlite'
 
-Example of getRecordHeaders function:
-offsets = database.getRecordHeaders(db, expression)
+Example of getRecordOffsets function:
+offsets = database.getRecordOffsets(db, expression)
 
 getRecordHeaders: The second function to be called. This requires one argument, the offsets found above
 This function will return a dictionary of headers based on the record size found at offset[0]
